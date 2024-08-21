@@ -79,7 +79,7 @@ class ChatCSV:
         chunks = filter_complex_metadata(chunks)
 
         # creates a vector store using embedding
-        vector_store = Chroma.from_documents(documents=chunks, embedding=FastEmbedEmbeddings())
+        vector_store = Chroma.from_documents(documents=chunk)
         # sets up the retriever
         self.retriever = vector_store.as_retriever(
             search_type="similarity_score_threshold",
