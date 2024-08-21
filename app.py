@@ -3,7 +3,7 @@ import tempfile
 import streamlit as st
 from streamlit_chat import message
 #from rag import ChatCSV
-from langchain.community.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain_community.chat_models import ChatOllama
 from langchain_community.embeddings import FastEmbedEmbeddings
 from langchain.schema.output_parser import StrOutputParser
